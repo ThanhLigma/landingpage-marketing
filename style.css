@@ -263,6 +263,7 @@ em {
     transform 0.2s ease,
     box-shadow 0.2s ease,
     background 0.2s ease;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -273,6 +274,7 @@ em {
   color: #fff;
   background: #a83261;
   box-shadow: 0 10px 25px rgba(168, 50, 97, 0.2);
+  border: none;
 }
 
 .btn-primary:hover {
@@ -751,6 +753,140 @@ em {
   font-size: 0.9rem;
 }
 
+/* ---------- ARTICLE / BLOG ---------- */
+.article-section {
+  background: #fff;
+}
+
+.article-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.article-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.article-header h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 15px;
+}
+
+.article-meta {
+  color: #8b747d;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.article-content p {
+  font-size: 1.05rem;
+  color: #65535c;
+  margin-bottom: 20px;
+}
+
+.article-content h3 {
+  font-size: 1.6rem;
+  color: #562b3d;
+  margin: 40px 0 20px;
+}
+
+/* QUY TẮC TỰ ĐỘNG DÙNG DẤU "-" CHO BULLET POINT */
+.article-content ul {
+  list-style: none;
+  padding-left: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.article-content ul li {
+  font-size: 1.05rem;
+  color: #65535c;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.article-content ul li::before {
+  content: "- ";
+  color: #a83261;
+  font-weight: bold;
+  position: absolute;
+  left: -1.2rem;
+}
+
+.article-content strong {
+  color: #562b3d;
+}
+
+.article-content blockquote {
+  border-left: 4px solid #a83261;
+  padding: 20px 30px;
+  background: #fff2f6;
+  border-radius: 0 16px 16px 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  color: #8d2855;
+  margin: 35px 0;
+}
+
+.article-content figure {
+  margin: 35px 0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.article-content img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+
+.article-content figcaption {
+  text-align: center;
+  padding: 12px;
+  background: #f9eff5;
+  color: #8b747d;
+  font-size: 0.85rem;
+  border-radius: 0 0 16px 16px;
+}
+
+.article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin: 45px 0 30px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(168, 50, 97, 0.1);
+}
+
+.article-tags span {
+  font-weight: 700;
+  color: #562b3d;
+  font-size: 0.95rem;
+}
+
+.article-tags a {
+  background: #f9eff5;
+  color: #a83261;
+  padding: 6px 15px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.article-tags a:hover {
+  background: #a83261;
+  color: #fff;
+}
+
+.article-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
 /* ---------- CAMPAIGN ---------- */
 .campaign {
   position: relative;
@@ -1152,6 +1288,15 @@ button:focus-visible {
 
   .quiz-result {
     padding: 18px;
+  }
+
+  .article-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .article-content blockquote {
+    font-size: 1.15rem;
+    padding: 15px 20px;
   }
 
   .campaign {
